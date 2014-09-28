@@ -1,1 +1,64 @@
-Hello, world!
+<header class="header">
+  <%= image_tag "TMC-Logo.png", class: "logo" %>
+</header>
+
+<div class="content">
+
+  <section class="about-us">
+    <%= image_tag "About-Us-Header.png", class: "header-image" %>
+    <p>
+      We like bringing our ideas to
+      <span class="c1">l</span><span class="c2">i</span><span class="c3">f</span><span class="c4">e</span>.
+      The journey matters as much to us as the destination.<br/>
+      We are not for hire. But you can try to inspire us.
+    </p>
+  </section>
+
+  <section class="our-principles">
+    <%= image_tag "Our-Principles-Header.png", class: "header-image" %>
+    <p>
+      We must have
+      <span class="c1">f</span><span class="c2">u</span><span class="c3">n</span>
+      in the making.<br/>
+      If we can't do it <strong>well</strong>, then we won't do it.
+    </p>
+  </section>
+
+  <section class="consists-of">
+    <%= image_tag "The-Collective-Header-Desktop.png", class: "header-image" %>
+    <%= image_tag "Carly.png", class: "person" %>
+    <%= image_tag "Chris.png", class: "person" %>
+    <%= image_tag "Edwin.png", class: "person" %>
+  </section>
+
+  <section class="we-are-grateful">
+    <p>
+      We are grateful to the ratings and reviews company
+      Reevoo for allowing us to use their UK office.
+    </p>
+  </section>
+
+  <section class="flags">
+    <%= image_tag "First-Project-Header.png", class: "header-image left" %>
+    <%= image_tag "Flags-Logo.png", class: "header-image right" %>
+    <p>
+      One of us wanted to learn all the flags of the world.
+      He was taken by surprise when his beloved dared him to draw famous flags from scratch.
+      Now we have built an iPhone app.
+      It’s different from all the other flag apps.
+      <%= link_to "Download from the App Store", "#coming-soon", class: "download" %>.
+    </p>
+
+    <div class="screenshot-container">
+      <%= image_tag "Screenshot-A.png", class: "screenshot" %>
+      <%= image_tag "Screenshot-B.png", class: "screenshot" %>
+      <%= image_tag "Screenshot-B.png", class: "screenshot" %>
+    </div>
+
+    <p>
+      Flags are weirdly ambiguous.
+      Inclusively uniting millions under the same banner, and at the same time excluding billions.
+      We are working on a digital art exhibition to invite others to ponder this ambiguity with us.
+    </p>
+  </section>
+</div>
