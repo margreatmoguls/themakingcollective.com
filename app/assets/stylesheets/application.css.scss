@@ -75,17 +75,22 @@ body {
 .content {
   background-color: #002238;
   background-image: image-url("Pattern-To-Repeat.png");
-  background-size: 20%;
+  background-size: 250px;
   padding: 55px 0;
 }
 
 section {
   margin: auto;
   margin-top: 85px;
-  width: 600px;
+  width: 640px;
   background-color: #002238;
-  padding: 40px 20px;
+  padding: 40px 0;
   position: relative;
+
+  p {
+    padding: 0 20px;
+  }
+
 
   &.about-us {
     border: 1px solid #25b7c1;
@@ -102,6 +107,16 @@ section {
     .person {
       width: 150px;
       padding: 0 10px;
+    }
+
+    .header-image {
+      &.desktop {
+        display: block;
+      }
+
+      &.mobile {
+        display: none;
+      }
     }
   }
 
@@ -146,6 +161,57 @@ section {
 
     &.right {
       left: 180px;
+    }
+  }
+}
+
+@media only screen
+and (max-width : 700px) {
+  section {
+    width: 90%;
+
+    &.consists-of {
+      padding-top: 60px;
+      .person {
+        width: 220px;
+      }
+
+      .header-image {
+        &.desktop {
+          display: none;
+        }
+
+        &.mobile {
+          display: block;
+          height: 100px;
+          top: -50px;
+        }
+      }
+    }
+
+    &.flags {
+      .header-image {
+        &.left {
+          left: 0;
+        }
+
+        &.right {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .screenshot-container {
+    display: inline;
+
+    .screenshot {
+      display: none;
+
+      &.best {
+        display: block;
+        margin: auto;
+      }
     }
   }
 }
